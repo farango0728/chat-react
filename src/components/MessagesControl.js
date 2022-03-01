@@ -73,10 +73,11 @@ const MessagesControl = (props) => {
         ) : null}
 
         <form onSubmit={sendMessage} className="message-control">
-          <textarea
+          <input
+            type="text"
             value={value}
             onChange={onChange}
-            placeholder="Type something...!"
+            placeholder="Message"
           />
           <div className="file-input-container">
             <input
@@ -104,7 +105,7 @@ const MessagesControl = (props) => {
             </label>
           </div>
           <button>
-            <img src={sendIcon} />
+           
             <span style={{ display: "inline-block" }}>Send</span>
           </button>
         </form>
